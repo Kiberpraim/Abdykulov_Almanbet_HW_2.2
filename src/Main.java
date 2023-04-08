@@ -9,15 +9,6 @@ public class Main {
         laptop2.printInfo();
     }
     public static Printable createObject(String className){
-        if (className == "ASUS" || className == "Asus" || className == "asus"){
-            className = "ASUS";
-        } else if (className == "MACBOOK" || className == "MacBook" || className == "Macbook" || className == "macbook") {
-            className = "MacBook";
-        } else if (className == "LENOVO" || className == "Lenovo" || className == "lenovo") {
-            className = "Lenovo";
-        }else {
-            System.out.println("Нельзя создать такой объек! Вы можете создавать объекты \"ASUS\",\"MacBook\",\"Lenovo\"");
-        }
         Laptop laptop = null;
         switch (className){
             case "ASUS": ASUS asus = new ASUS("M413DA",15,"Белый");
